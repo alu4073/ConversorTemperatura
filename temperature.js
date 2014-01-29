@@ -12,15 +12,15 @@ function calculate() {
     num = parseFloat(num);
     if (type == 'c' || type == 'C') {
       result = (num * 9/5)+32;
-      result = result.toFixed(1)+" Farenheit"
+      result = result.toFixed(1)+" grados Farenheit"
     }
     else {
       result = (num - 32)*5/9;
-      result = result.toFixed(1)+" Celsius"
+      result = result.toFixed(1)+" grados Celsius"
     }
     converted.innerHTML = result;
   }
   else {
-    converted.innerHTML = "ERROR! Try something like '-4.2C' instead";
+    converted.innerHTML = "ERROR! Prueba algo como '-5.3F'";
   }
 }
